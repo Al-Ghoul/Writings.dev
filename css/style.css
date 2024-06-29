@@ -58,7 +58,6 @@ hr {
 .categories {
   display: flex;
   justify-content: center;
-  gap: 41px;
   flex-flow: wrap;
 }
 
@@ -78,13 +77,14 @@ hr {
 .categories-list {
   --mask: linear-gradient(to right,
       rgba(0, 0, 0, 1) 0,
-      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 1) 75%,
       rgba(0, 0, 0, 0) 100%,
       rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
   gap: 36px;
   flex-flow: wrap;
+  padding: 0 20px;
 }
 
 .categories-list-item p {
