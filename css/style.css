@@ -80,14 +80,11 @@ hr {
 }
 
 .categories-list {
-  --mask: linear-gradient(
-      to right,
+  --mask: linear-gradient(to right,
       rgba(0, 0, 0, 1) 0,
       rgba(0, 0, 0, 1) 75%,
       rgba(0, 0, 0, 0) 100%,
-      rgba(0, 0, 0, 0) 0
-    )
-    100% 50% / 100% 100% repeat-x;
+      rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
   gap: 36px;
@@ -161,4 +158,30 @@ hr {
 .article-footer p {
   display: inline;
   margin: 0;
+}
+
+.pagination {
+  display: flex;
+  align-self: center;
+  gap: 20px;
+}
+
+.pagination > a {
+  text-decoration: none;
+  color: #909090;
+  font-weight: 300;
+  font-size: 20px;
+  align-self: center;
+}
+
+.pagination a:first-child,
+.pagination a:last-child {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.link.active {
+  color: #FF7575;
+  border-top: 2px solid #FF7575;
 }
