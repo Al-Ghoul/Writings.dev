@@ -29,6 +29,11 @@ nav ul li a,
   align-items: center;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-section h1 {
   font-style: italic;
   font-size: 71px;
@@ -75,11 +80,14 @@ hr {
 }
 
 .categories-list {
-  --mask: linear-gradient(to right,
+  --mask: linear-gradient(
+      to right,
       rgba(0, 0, 0, 1) 0,
       rgba(0, 0, 0, 1) 75%,
       rgba(0, 0, 0, 0) 100%,
-      rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
+      rgba(0, 0, 0, 0) 0
+    )
+    100% 50% / 100% 100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
   gap: 36px;
@@ -91,4 +99,66 @@ hr {
   color: #909090;
   margin: 0;
   font-size: 27px;
+}
+
+.articles-section {
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(1, 390px);
+  gap: 37px;
+  list-style-type: none;
+  margin: 100px auto;
+}
+
+@media (min-width: 1024px) {
+  .articles-section {
+    grid-template-columns: repeat(2, 390px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .articles-section {
+    grid-template-columns: repeat(3, 390px);
+  }
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 439px;
+  border-radius: 22px;
+  padding: 26px 0 0 26px;
+}
+
+.article-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-header h2 {
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.article img {
+  width: 330px;
+  height: 160px;
+}
+
+.article-footer {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 26px;
+  gap: 26px;
+}
+
+.article-footer span {
+  font-weight: 600;
+}
+
+.article-footer p {
+  display: inline;
+  margin: 0;
 }
