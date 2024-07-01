@@ -6,6 +6,9 @@ You can also find the Figma design [Here](https://www.figma.com/file/nh0V05z3NB8
 
 Live review at [al-ghoul.github.io/Writings.dev/](https://al-ghoul.github.io/Writings.dev/)
 
+A snapshot of the site:
+![snapshot](./snap-shot.png)
+
 ## Used Technologies
 
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
